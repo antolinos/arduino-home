@@ -1,0 +1,26 @@
+
+
+Group all
+Group Temps (all)
+Group Outdoor (all)
+Group Indoor (all)
+Group Humidity (all)
+
+
+Number chaudiere_temp " Chaudiere [%.1f °C]" (Temps, Outdoor) {mqtt="<[<broker>:1/temperature:state:JS(trim.js)]"} 
+Number invites_temp " Invites  [%.1f °C]" (Temps, Indoor) {mqtt="<[<broker>:2/temperature:state:JS(trim.js)]"} 
+Number cuisine_temp " Cuisine  [%.1f °C]" (Temps, Indoor) {mqtt="<[<broker>:3/temperature:state:JS(trim.js)]"} 
+Number buanderie_temp " Buanderie  [%.1f °C]" (Temps, Indoor) {mqtt="<[<broker>:4/temperature:state:JS(trim.js)]"} 
+Number douche_temp " Douche [%.1f °C]" (Temps, Indoor) {mqtt="<[<broker>:5/temperature:state:JS(trim.js)]"} 
+Number jardin_temp " Jardin [%.1f °C]" (Temps, Outdoor) {mqtt="<[<broker>:6/temperature:state:JS(trim.js)]"}
+Number principal_temp " Principal [%.1f °C]" (Temps, Indoor) {mqtt="<[<broker>:7/temperature:state:JS(trim.js)]"}
+Number combles_temp " Combles [%.1f °C]" (Temps, Outdoor,Indoor) {mqtt="<[<broker>:8/temperature:state:JS(trim.js)]"}
+
+Number chaudiere_humidity  "Chaudiere hum [%.1f %%Rh]" (Humidity) {mqtt="<[<broker>:1/humidity:state:JS(trim.js)]"} 
+Number invites_humidity  "Invites hum [%.1f %%Rh]" (Humidity) {mqtt="<[<broker>:2/humidity:state:JS(trim.js)]"} 
+Number cuisine_humidity "Cuisine hum [%.1f %%Rh]" (Humidity) {mqtt="<[<broker>:3/humidity:state:JS(trim.js)]"} 
+Number buanderie_humidity  "Buanderie hum [%.1f %%Rh]" (Humidity) {mqtt="<[<broker>:4/humidity:state:JS(trim.js)]"} 
+Number douche_humidity  "Douche hum [%.1f %%Rh]" (Humidity) {mqtt="<[<broker>:5/humidity:state:JS(trim.js)]"}
+Number jardin_humidity  "Jardin hum [%.1f %%Rh]" (Humidity) {mqtt="<[<broker>:6/humidity:state:JS(trim.js)]"}
+Number principal_humidity " Principal hum[%.1f °C]" (Humidity) {mqtt="<[<broker>:7/humidity:state:JS(trim.js)]"}
+Number combles_humidity  "Combles hum [%.1f %%Rh]" (Humidity) {mqtt="<[<broker>:8/humidity:state:JS(trim.js)]"}
